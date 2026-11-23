@@ -1,0 +1,6 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - aws s3 sync frontend/ s3://906-unsis-yhosmar --region us-east-2 --delete
